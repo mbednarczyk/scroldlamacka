@@ -1,0 +1,56 @@
+<%- model_class = Gist -%>
+<div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <a class="brand" href="/gists">Marek Bednarczyk - Lepsza wersja My gists</a>
+    <ul class="nav">
+      <li class="divider-vertical"></li>
+      <li><a href="/gists/new">Nowa wrzutka</a></li>
+      <li class="divider-vertical"></li>
+    </ul>
+  </div>
+</div>
+
+
+<div id="infinite-scrolling" style="visibility: hidden;">
+  <%= will_paginate %>
+</div>
+
+<div id="my-gists">
+    <div class="jumbotron">
+            <div class="container">
+          <div class = "row">
+            <div class = "col-lg-4">
+      <%= render @gists %>
+</div>
+</div>
+</div>
+            </div>
+          </div>
+</div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+        
+
+ <!-- .container -->
+
+ 
+     
+     <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="navbar-inner">
+          <p class="navbar-text pull-center"><%= facebook_like %></p>
+        </div>
+     </div>
